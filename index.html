@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+ 
+    <title>shakespeare</title>
+</head>
+<body>
+    <header>   
+        <ul>
+            <div class="tittle">
+                <a href="#" id="one">Home</a>
+                <a href="#">Sobre-nós</a>  
+                <a href="#">Consultoria</a>
+                <a id="comprar" onclick="comprar()" href="#">Comprar</a>
+            </div>
+        </ul>
+    </header>   
+
+<main>
+    
+        <h4>incrível história de</h4>
+            <h1>William Shakespeare</h1>
+                <h2>Mergulhe na genialidade de William Shakespeare e transforme cada página em uma experiência      inesquecível. Adquira agora seu clássico favorito e descubra por que suas obras continuam a     encantar gerações!</h2>
+    <div class="wrapper">
+        <a id="button" onclick="resgatar()"><span>Resgate seu Desconto</span></a>
+    </div>
+
+</main> 
+
+    <div class="img">
+        <img src="https://i.postimg.cc/Kjdf6JHP/luxa-org-opacity-changed-ws.png">
+    </div>
+
+<script>
+    
+let bonusResgatado = false;
+
+function resgatar() {
+
+    bonusResgatado = true;
+
+
+    window.alert("Você ganhou 25% de desconto!");
+
+   
+    const comprarLink = document.getElementById('comprar');
+    comprarLink.href = "../projeto ferias/public/planos.html";
+}
+
+
+function comprar(event) {
+   
+    if (bonusResgatado !== true) {
+    
+        window.alert("Por favor, resgate seu desconto primeiro.");
+    } else {
+      
+        
+    }
+}
+
+</script>
+</body>
+</html>
